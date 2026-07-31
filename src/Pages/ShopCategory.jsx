@@ -18,7 +18,7 @@ export const ShopCategory = (props) => {
     sort by <img src={dropdown_icon} alt="" />
   </div>
 </div>
-<div className="shop-category">
+<div className="shop-category-product">
   {all_product.map((item,i)=>{
 if(props.category===item.category){
   return   <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}/>
@@ -26,6 +26,9 @@ if(props.category===item.category){
   return null
 }
   })}
+</div>
+<div className="shopcategory-loadmore">
+  Explore More
 </div>
     </div>
   )

@@ -17,3 +17,23 @@
 .shopcategory-indexsort p span{
 font-weight: 600;
 }
+.shop-category-product{
+   margin:20px 70px ; 
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   column-gap: 2px;
+   row-gap: 80px;
+}
+.shopcategory-loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width:233px;
+    height: 69px;
+    border-radius: 75px;
+    background-color: #ededed;
+    color:#787878 ;
+    font-size: 18px;
+    font-weight: 500;
+}
