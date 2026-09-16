@@ -1,23 +1,155 @@
-.relatedpdt{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    height: 90vh;
+/* ========================================
+   RELATED PRODUCTS - DESKTOP
+======================================== */
+
+.relatedpdt {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 100px;
+  padding: 0 5%;
+
+  box-sizing: border-box;
 }
-.relatedpdt h1{
-   color:#171717;
-   font-size: 50px; 
-   font-weight: 600;
+
+.relatedpdt h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+
+  margin: 0;
+  text-align: center;
 }
-.relatedpdt hr{
+
+.relatedpdt hr {
   width: 200px;
   height: 6px;
-  border-radius: 10px; 
+
+  border: none;
+  border-radius: 10px;
+
   background-color: #252525;
+
+  margin: 0;
 }
-.relatedproducts-item{
-  margin: 50px;
-  display: flex;
-  gap: 30px;  
+
+
+/* ========================================
+   RELATED PRODUCTS ITEMS - DESKTOP
+======================================== */
+
+.relatedproducts-item {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 50px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   TABLET
+   769px - 1024px
+======================================== */
+
+@media (max-width: 1024px) {
+
+  .relatedpdt {
+    margin-bottom: 80px;
+    padding: 0 4%;
+  }
+
+  .relatedpdt h1 {
+    font-size: 42px;
+  }
+
+  .relatedpdt hr {
+    width: 160px;
+    height: 5px;
+  }
+
+  .relatedproducts-item {
+    margin-top: 40px;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    padding: 0;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+   Up to 768px
+======================================== */
+
+@media (max-width: 768px) {
+
+  .relatedpdt {
+    margin-bottom: 60px;
+    padding: 0 5%;
+
+    gap: 8px;
+  }
+
+  .relatedpdt h1 {
+    font-size: 34px;
+  }
+
+  .relatedpdt hr {
+    width: 130px;
+    height: 4px;
+  }
+
+  .relatedproducts-item {
+    margin-top: 30px;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+   Up to 480px
+======================================== */
+
+@media (max-width: 480px) {
+
+  .relatedpdt {
+    margin-bottom: 45px;
+    padding: 0 4%;
+  }
+
+  .relatedpdt h1 {
+    font-size: 28px;
+  }
+
+  .relatedpdt hr {
+    width: 100px;
+    height: 4px;
+  }
+
+  .relatedproducts-item {
+    margin-top: 25px;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+  }
 }

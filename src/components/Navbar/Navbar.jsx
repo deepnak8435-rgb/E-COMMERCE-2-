@@ -21,9 +21,19 @@ export const Navbar = () => {
   <li onClick={()=>{setMenu('kids')}}><Link style={{textDecoration:"none"}} to="/kids">kids</Link>{menu==="kids"?<hr/>:<></>}</li>
 </ul>
 <div className="nav-login-cart">
-  <Link to="/login"><button>Login</button></Link>
-  <Link to="/carts"><img src={cart_icon} alt="" /></Link>
-  <div className="nav-cart-count">{getTotalCartItems()}</div>
+  <Link to="/login">
+    <button>Login</button>
+  </Link>
+
+  <div className="nav-cart">
+    <Link to="/carts">
+      <img src={cart_icon} alt="Cart" />
+    </Link>
+
+    <div className="nav-cart-count">
+      {getTotalCartItems()}
+    </div>
+  </div>
 </div>
     </div>
   )

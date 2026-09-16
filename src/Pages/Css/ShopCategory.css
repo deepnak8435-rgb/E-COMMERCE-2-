@@ -1,39 +1,288 @@
-.shopcategory-banner{
-    display: block;
-    margin:30px auto ;
-    width: 82%;
+/* ========================================
+   SHOP CATEGORY BANNER - DESKTOP
+======================================== */
+
+.shopcategory-banner {
+  display: block;
+
+  width: 82%;
+  max-width: 1400px;
+
+  margin: 30px auto;
+
+  height: auto;
 }
-.shopcategory-indexsort{
+
+
+/* ========================================
+   INDEX + SORT - DESKTOP
+======================================== */
+
+.shopcategory-indexsort {
+  width: 100%;
+  max-width: 1400px;
+
   display: flex;
-  margin:0px 170px;
-  justify-content: space-between;  
+  justify-content: space-between;
   align-items: center;
+
+  margin: 0 auto;
+
+  padding: 0 5%;
+
+  box-sizing: border-box;
 }
-.shopcategory-sort{
-    padding: 10px 20px;
-    border-radius: 40px;
-    border:1px solid #888;
+
+.shopcategory-indexsort p {
+  margin: 0;
+
+  color: #454545;
+  font-size: 16px;
 }
-.shopcategory-indexsort p span{
-font-weight: 600;
+
+.shopcategory-indexsort p span {
+  font-weight: 600;
 }
-.shop-category-product{
-   margin:20px 70px ; 
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   column-gap: 2px;
-   row-gap: 80px;
+
+
+/* ========================================
+   SORT BUTTON
+======================================== */
+
+.shopcategory-sort {
+  padding: 10px 20px;
+
+  border-radius: 40px;
+
+  border: 1px solid #888;
+
+  cursor: pointer;
+
+  white-space: nowrap;
 }
-.shopcategory-loadmore{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 150px auto;
-    width:233px;
-    height: 69px;
-    border-radius: 75px;
-    background-color: #ededed;
-    color:#787878 ;
-    font-size: 18px;
-    font-weight: 500;
+
+
+/* ========================================
+   PRODUCTS - DESKTOP
+======================================== */
+
+.shop-category-product {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 50px auto 0;
+
+  padding: 0 5%;
+
+  box-sizing: border-box;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  column-gap: 25px;
+  row-gap: 60px;
+}
+
+
+/* ========================================
+   LOAD MORE
+======================================== */
+
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 120px auto;
+
+  width: 233px;
+  height: 69px;
+
+  border-radius: 75px;
+
+  background-color: #ededed;
+
+  color: #787878;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+
+/* ========================================
+   TABLET
+   769px - 1024px
+======================================== */
+
+@media (max-width: 1024px) {
+
+  .shopcategory-banner {
+    width: 90%;
+    margin: 25px auto;
+  }
+
+
+  /* Index + Sort */
+
+  .shopcategory-indexsort {
+    padding: 0 4%;
+  }
+
+  .shopcategory-indexsort p {
+    font-size: 15px;
+  }
+
+  .shopcategory-sort {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+
+
+  /* Products */
+
+  .shop-category-product {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    column-gap: 20px;
+    row-gap: 50px;
+
+    padding: 0 4%;
+  }
+
+
+  /* Load More */
+
+  .shopcategory-loadmore {
+    width: 210px;
+    height: 60px;
+
+    margin: 100px auto;
+
+    font-size: 16px;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+   481px - 768px
+======================================== */
+
+@media (max-width: 768px) {
+
+  .shopcategory-banner {
+    width: 92%;
+
+    margin: 20px auto;
+  }
+
+
+  /* Index + Sort */
+
+  .shopcategory-indexsort {
+    padding: 0 5%;
+
+    gap: 15px;
+  }
+
+  .shopcategory-indexsort p {
+    font-size: 13px;
+
+    line-height: 1.4;
+  }
+
+  .shopcategory-sort {
+    padding: 8px 15px;
+
+    font-size: 13px;
+  }
+
+
+  /* Products */
+
+  .shop-category-product {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 15px;
+    row-gap: 35px;
+
+    margin-top: 30px;
+
+    padding: 0 5%;
+  }
+
+
+  /* Load More */
+
+  .shopcategory-loadmore {
+    width: 190px;
+    height: 55px;
+
+    margin: 70px auto;
+
+    font-size: 15px;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+   Up to 480px
+======================================== */
+
+@media (max-width: 480px) {
+
+  .shopcategory-banner {
+    width: 94%;
+
+    margin: 15px auto;
+  }
+
+
+  /* Index + Sort */
+
+  .shopcategory-indexsort {
+    padding: 0 4%;
+
+    gap: 10px;
+  }
+
+  .shopcategory-indexsort p {
+    font-size: 12px;
+  }
+
+  .shopcategory-sort {
+    padding: 7px 12px;
+
+    font-size: 12px;
+  }
+
+
+  /* Products */
+
+  .shop-category-product {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 10px;
+    row-gap: 30px;
+
+    margin-top: 25px;
+
+    padding: 0 4%;
+  }
+
+
+  /* Load More */
+
+  .shopcategory-loadmore {
+    width: 170px;
+    height: 50px;
+
+    margin: 50px auto;
+
+    font-size: 14px;
+  }
 }

@@ -1,27 +1,197 @@
+/* ========================================
+   DESCRIPTION BOX - DESKTOP
+======================================== */
+
 .descriptionbox {
-  margin: 120px 170px;
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 120px auto;
+
+  padding: 0 5%;
+
+  box-sizing: border-box;
 }
+
+
+/* ========================================
+   NAVIGATION TABS
+======================================== */
+
 .descriptionbox-nav {
   display: flex;
+  align-items: stretch;
 }
+
 .descriptionbox-nav-box {
+  width: 171px;
+  height: 70px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  box-sizing: border-box;
+
   font-size: 16px;
   font-weight: 600;
-  width: 171px;
-  height: 70px;
+
   border: 1px solid #d0d0d0;
+
+  cursor: pointer;
 }
+
 .descriptionbox-nav-box.fade {
   background-color: #bfbfbf;
 }
-.descriptionbox-description{
-    display: flex;
-    flex-direction: column;
-    gap:25px;
-    border:  1px solid #d0d0d0;
-    padding: 48px;
-    padding-bottom: 70px;
+
+
+/* ========================================
+   DESCRIPTION CONTENT
+======================================== */
+
+.descriptionbox-description {
+  display: flex;
+  flex-direction: column;
+
+  gap: 25px;
+
+  border: 1px solid #d0d0d0;
+
+  padding: 48px;
+  padding-bottom: 70px;
+
+  box-sizing: border-box;
+
+  color: #454545;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   TABLET
+   769px - 1024px
+======================================== */
+
+@media (max-width: 1024px) {
+
+  .descriptionbox {
+    margin: 80px auto;
+
+    padding: 0 4%;
+  }
+
+  .descriptionbox-nav-box {
+    width: 150px;
+    height: 60px;
+
+    font-size: 15px;
+  }
+
+  .descriptionbox-description {
+    gap: 20px;
+
+    padding: 35px;
+    padding-bottom: 50px;
+
+    font-size: 15px;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+   Up to 768px
+======================================== */
+
+@media (max-width: 768px) {
+
+  .descriptionbox {
+    margin: 60px auto;
+
+    padding: 0 5%;
+  }
+
+
+  /* Tabs */
+
+  .descriptionbox-nav {
+    width: 100%;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+  }
+
+  .descriptionbox-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .descriptionbox-nav-box {
+    width: 140px;
+    min-width: 140px;
+
+    height: 55px;
+
+    font-size: 14px;
+  }
+
+
+  /* Description */
+
+  .descriptionbox-description {
+    gap: 18px;
+
+    padding: 25px;
+
+    padding-bottom: 40px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+   Up to 480px
+======================================== */
+
+@media (max-width: 480px) {
+
+  .descriptionbox {
+    margin: 45px auto;
+
+    padding: 0 4%;
+  }
+
+
+  /* Tabs */
+
+  .descriptionbox-nav-box {
+    width: 120px;
+    min-width: 120px;
+
+    height: 50px;
+
+    font-size: 13px;
+  }
+
+
+  /* Description */
+
+  .descriptionbox-description {
+    gap: 15px;
+
+    padding: 18px;
+
+    padding-bottom: 30px;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+  }
 }

@@ -1,23 +1,153 @@
+/* ========================================
+   POPULAR - DESKTOP
+======================================== */
+
 .popular {
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
   gap: 10px;
-  height: 90vh;
+
+  padding: 0 5%;
+  margin-bottom: 100px;
+
+  box-sizing: border-box;
 }
+
 .popular h1 {
   color: #171717;
   font-size: 50px;
   font-weight: 600;
+
+  margin: 0;
+  text-align: center;
 }
+
 .popular hr {
   width: 200px;
   height: 6px;
+
+  border: none;
   border-radius: 10px;
+
   background: #252525;
+
+  margin: 0;
 }
+
+
+/* ========================================
+   POPULAR ITEMS - DESKTOP
+======================================== */
+
 .popular-items {
+  width: 100%;
+  max-width: 1400px;
+
   margin-top: 50px;
-  display: flex;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
   gap: 30px;
+
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   TABLET
+   769px - 1024px
+======================================== */
+
+@media (max-width: 1024px) {
+
+  .popular {
+    padding: 0 4%;
+    margin-bottom: 80px;
+  }
+
+  .popular h1 {
+    font-size: 42px;
+  }
+
+  .popular hr {
+    width: 160px;
+    height: 5px;
+  }
+
+  .popular-items {
+    margin-top: 40px;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+   Up to 768px
+======================================== */
+
+@media (max-width: 768px) {
+
+  .popular {
+    padding: 0 5%;
+    margin-bottom: 60px;
+
+    gap: 8px;
+  }
+
+  .popular h1 {
+    font-size: 34px;
+  }
+
+  .popular hr {
+    width: 130px;
+    height: 4px;
+  }
+
+  .popular-items {
+    margin-top: 30px;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+   Up to 480px
+======================================== */
+
+@media (max-width: 480px) {
+
+  .popular {
+    padding: 0 4%;
+    margin-bottom: 45px;
+  }
+
+  .popular h1 {
+    font-size: 28px;
+  }
+
+  .popular hr {
+    width: 100px;
+    height: 4px;
+  }
+
+  .popular-items {
+    margin-top: 25px;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+  }
 }
