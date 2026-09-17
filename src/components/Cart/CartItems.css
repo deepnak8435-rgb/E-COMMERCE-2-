@@ -1,551 +1,319 @@
-/* ========================================
-   CART ITEMS - DESKTOP
-======================================== */
-
+  /* CART ITEMS - DESKTOP */
 .cartitem {
   width: 100%;
   max-width: 1400px;
-
   margin: 100px auto;
-
   padding: 0 5%;
-
   box-sizing: border-box;
 }
-
 .cartitem hr {
   height: 3px;
-
   background-color: #e2e2e2;
-
   border: 0;
-
   margin: 0;
 }
-
-
-/* ========================================
-   CART HEADER
-======================================== */
-
+   /* CART HEADER */
 .cartitems-format-main {
   display: grid;
-
-  grid-template-columns:
-    0.5fr
-    2fr
-    1fr
-    1fr
-    1fr
-    1fr;
-
+  grid-template-columns:0.5fr 2fr 1fr 1fr 1fr 1fr; 
   gap: 40px;
-
   padding: 20px 0;
-
   color: #454545;
-
   font-size: 18px;
   font-weight: 600;
-
   align-items: center;
 }
-
-
-/* ========================================
-   CART ITEMS
-======================================== */
-
+   /* CART ITEMS */
 .cartitems-format {
   display: grid;
-
-  grid-template-columns:
-    0.5fr
-    2fr
-    1fr
-    1fr
-    1fr
-    1fr;
-
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
   gap: 40px;
-
   align-items: center;
-
   padding: 20px 0;
-
   color: #454545;
-
   font-size: 17px;
   font-weight: 500;
 }
-
 .carticon-product-icon {
   width: 62px;
   height: 62px;
-
   object-fit: cover;
 }
-
 .cartitem-remove-icon {
   width: 15px;
-
   margin: 0;
-
   cursor: pointer;
 }
-
 .cartitems-quantity {
   width: 64px;
   height: 50px;
-
   border: 2px solid #ebebeb;
-
   background: #ffffff;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
-/* ========================================
-   CART BOTTOM SECTION
-======================================== */
-
+   /* CART BOTTOM SECTION */
 .cartitem-down {
   display: flex;
-
   gap: 80px;
-
   margin: 100px 0;
-
   align-items: flex-start;
 }
-
-
-/* ========================================
-   CART TOTAL
-======================================== */
-
+   /* CART TOTAL */
 .cartitem-total {
   flex: 1;
-
   display: flex;
   flex-direction: column;
-
   gap: 30px;
-
   min-width: 0;
 }
-
 .cartitem-total h1 {
   margin: 0;
 }
-
 .cartitem-total-item {
   display: flex;
-
   justify-content: space-between;
-
   padding: 15px 0;
-
   border-bottom: 1px solid #eeeeee;
 }
-
 .cartitem-total button {
   width: 262px;
   height: 58px;
-
   outline: none;
   border: none;
-
   background: #ff5a5a;
-
   color: #ffffff;
-
   font-size: 16px;
   font-weight: 600;
-
   cursor: pointer;
-
   transition: 0.3s;
 }
-
 .cartitem-total button:hover {
   background: #e94545;
 }
-
-
 /* ========================================
    PROMO CODE
 ======================================== */
-
 .cartitem-promocode {
   flex: 1;
-
   font-size: 16px;
   font-weight: 500;
-
   min-width: 0;
 }
-
 .cartitem-promocode p {
   color: #555;
-
   margin-top: 0;
 }
-
 .cartitem-promobox {
   width: 100%;
   max-width: 504px;
-
   display: flex;
   align-items: center;
-
   margin-top: 15px;
-
   padding-left: 20px;
-
   height: 58px;
-
   background: #eaeaea;
-
   box-sizing: border-box;
 }
-
 .cartitem-promobox input {
   flex: 1;
-
   min-width: 0;
-
   border: none;
   outline: none;
-
   background: transparent;
-
   font-size: 16px;
-
   height: 50px;
-
   padding: 0 10px;
 }
-
 .cartitem-promobox button {
   width: 170px;
   height: 58px;
-
   flex-shrink: 0;
-
   border: none;
-
   font-size: 16px;
-
   background-color: black;
-
   color: white;
-
   cursor: pointer;
 }
-
-
-/* ========================================
-   TABLET
-   769px - 1024px
-======================================== */
-
+   /* TABLET
+   769px - 1024px */
 @media (max-width: 1024px) {
-
   .cartitem {
     margin: 70px auto;
-
     padding: 0 4%;
   }
-
   .cartitems-format-main,
   .cartitems-format {
     gap: 20px;
-
     font-size: 15px;
   }
-
   .carticon-product-icon {
     width: 55px;
     height: 55px;
   }
-
   .cartitems-quantity {
     width: 55px;
     height: 45px;
   }
-
   .cartitem-down {
     gap: 40px;
-
     margin: 70px 0;
   }
-
   .cartitem-total {
     gap: 25px;
   }
-
   .cartitem-promobox {
     max-width: 100%;
   }
-
   .cartitem-promobox input {
     font-size: 14px;
   }
-
   .cartitem-promobox button {
     width: 140px;
-
     font-size: 14px;
   }
-
   .cartitem-total button {
     width: 220px;
     height: 55px;
   }
 }
-
-
 /* ========================================
    MOBILE
    Up to 768px
 ======================================== */
-
 @media (max-width: 768px) {
-
   .cartitem {
     margin: 40px auto;
-
     padding: 0 5%;
   }
-
-
   /* Cart Header */
-
   .cartitems-format-main {
-    grid-template-columns:
-      0.6fr
-      2fr
-      1fr
-      1fr
-      0.5fr;
-
+    grid-template-columns:0.6fr 2fr 1fr 1fr 0.5fr;
     gap: 10px;
-
     padding: 15px 0;
-
     font-size: 13px;
   }
-
-
   /* Cart Item */
-
   .cartitems-format {
-    grid-template-columns:
-      0.6fr
-      2fr
-      1fr
-      1fr
-      0.5fr;
-
+    grid-template-columns: 0.6fr 2fr 1fr 1fr 0.5fr;
     gap: 10px;
-
     padding: 15px 0;
-
     font-size: 13px;
   }
-
   .carticon-product-icon {
     width: 50px;
     height: 50px;
   }
-
   .cartitems-quantity {
     width: 45px;
     height: 40px;
-
     font-size: 13px;
   }
-
   .cartitem-remove-icon {
     width: 13px;
   }
-
-
   /* Bottom */
-
   .cartitem-down {
     flex-direction: column;
-
     gap: 45px;
-
     margin: 60px 0;
   }
-
   .cartitem-total,
   .cartitem-promocode {
     width: 100%;
   }
-
-
   /* Total */
-
   .cartitem-total-item {
     font-size: 15px;
   }
-
   .cartitem-total button {
     width: 220px;
     height: 52px;
   }
-
-
   /* Promo */
-
   .cartitem-promobox {
     width: 100%;
     height: 52px;
-
     padding-left: 10px;
   }
-
   .cartitem-promobox input {
     height: 48px;
-
     font-size: 14px;
   }
-
   .cartitem-promobox button {
     width: 120px;
     height: 52px;
-
     font-size: 14px;
   }
 }
-
-
-/* ========================================
-   SMALL MOBILE
-   Up to 480px
-======================================== */
-
+   /* SMALL MOBILE
+   Up to 480px */
 @media (max-width: 480px) {
-
   .cartitem {
     margin: 25px auto;
-
     padding: 0 4%;
   }
-
-
   /* Header */
-
   .cartitems-format-main {
-    grid-template-columns:
-      0.5fr
-      1.8fr
-      0.8fr
-      0.8fr
-      0.4fr;
-
+    grid-template-columns:0.5fr 1.8fr 0.8fr 0.8fr 0.4fr;
     gap: 7px;
-
     padding: 12px 0;
-
     font-size: 11px;
   }
-
-
   /* Items */
-
   .cartitems-format {
-    grid-template-columns:
-      0.5fr
-      1.8fr
-      0.8fr
-      0.8fr
-      0.4fr;
-
+    grid-template-columns:0.5fr 1.8fr 0.8fr 0.8fr 0.4fr;
     gap: 7px;
-
     padding: 12px 0;
-
     font-size: 11px;
   }
-
   .carticon-product-icon {
     width: 42px;
     height: 42px;
   }
-
   .cartitems-quantity {
     width: 38px;
     height: 35px;
-
     font-size: 11px;
   }
-
   .cartitem-remove-icon {
     width: 11px;
   }
-
-
   /* Bottom */
-
   .cartitem-down {
     gap: 35px;
-
     margin: 45px 0;
   }
-
-
   /* Total */
-
   .cartitem-total-item {
     padding: 12px 0;
-
     font-size: 14px;
   }
-
   .cartitem-total button {
     width: 100%;
     max-width: 220px;
-
     height: 50px;
-
     font-size: 14px;
   }
-
-
   /* Promo */
-
   .cartitem-promocode {
     font-size: 14px;
   }
-
   .cartitem-promobox {
     height: 48px;
-
     padding-left: 8px;
   }
-
   .cartitem-promobox input {
     height: 44px;
-
     font-size: 12px;
   }
-
   .cartitem-promobox input::placeholder {
     font-size: 12px;
   }
-
   .cartitem-promobox button {
     width: 100px;
     height: 48px;
-
     font-size: 12px;
   }
 }

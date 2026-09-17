@@ -1,19 +1,13 @@
-/* ========================================
-   NEW COLLECTION - DESKTOP
-======================================== */
-
+  /* NEW COLLECTION - DESKTOP */
 .new-collection {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   gap: 10px;
   margin-bottom: 100px;
-
   padding: 0 5%;
   box-sizing: border-box;
 }
-
 .new-collection h1 {
   color: #171717;
   font-size: 50px;
@@ -21,119 +15,80 @@
   margin: 0;
   text-align: center;
 }
-
 .new-collection hr {
   width: 200px;
   height: 6px;
-
   border: none;
   border-radius: 10px;
   background: #252525;
-
   margin: 0;
 }
-
-
-/* ========================================
-   COLLECTIONS - DESKTOP
-======================================== */
-
+   /* COLLECTIONS - DESKTOP */
 .collections {
   width: 100%;
   max-width: 1400px;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   gap: 30px;
-
   margin: 0 auto;
   padding: 0 5%;
   box-sizing: border-box;
 }
-/* ========================================
-   TABLET
-   769px - 1024px
-======================================== */
-
+   /* TABLET
+   769px - 1024px */
 @media (max-width: 1024px) {
-
   .new-collection {
     margin-bottom: 70px;
     padding: 0 4%;
   }
-
   .new-collection h1 {
     font-size: 42px;
   }
-
   .new-collection hr {
     width: 160px;
     height: 5px;
   }
-
-
   .collections {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 0 4%;
   }
 }
-
-
-/* ========================================
-   MOBILE
-   Up to 768px
-======================================== */
-
+   /* MOBILE
+   Up to 768px */
 @media (max-width: 768px) {
-
   .new-collection {
     margin-bottom: 60px;
     gap: 8px;
     padding: 0 5%;
   }
-
   .new-collection h1 {
     font-size: 34px;
   }
-
   .new-collection hr {
     width: 130px;
     height: 4px;
   }
-
-
   .collections {
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
     padding: 0 5%;
   }
 }
-
-
-/* ========================================
-   SMALL MOBILE
-   Up to 480px
-======================================== */
-
+   /* SMALL MOBILE
+   Up to 480px */
 @media (max-width: 480px) {
-
   .new-collection {
     margin-bottom: 45px;
     gap: 7px;
   }
-
   .new-collection h1 {
     font-size: 28px;
   }
-
   .new-collection hr {
     width: 100px;
     height: 4px;
   }
-
-
   .collections {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
